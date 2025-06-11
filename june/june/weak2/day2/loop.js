@@ -106,3 +106,6 @@ console.log(str)
 let c=20;
 console.log("value is :",(c+1))
 console.log('value is :${c}+1')
+
+
+console.log("for of loop ")
