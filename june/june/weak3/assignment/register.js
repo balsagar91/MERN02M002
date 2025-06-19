@@ -1,8 +1,11 @@
-let regBtn = document.getElementById("register-btn");
+let regBtn = document.getElementByClass("register-btn");
 
 regBtn.addEventListener("click", () => {
   let username = document.getElementById("reg-username").value.trim();
   let password = document.getElementById("reg-password").value.trim();
+  
+  console.log(username)
+  console.log(password)
 
   if (username && password) {
     let userData = {
@@ -10,7 +13,7 @@ regBtn.addEventListener("click", () => {
       password: password,
     };
 
-    // Save user data as key: user_USERNAME
+
     localStorage.setItem("user_" + username, JSON.stringify(userData));
     alert("Registered Successfully! Now Login.");
   } else {
